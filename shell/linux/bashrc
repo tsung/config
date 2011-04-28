@@ -32,6 +32,7 @@ if [ "$PS1" ]; then
     alias grep='grep --color'
     alias diff='colordiff'
     alias top='htop'
+    alias tmux='TERM=xterm-256color tmux -2'
     alias b="echo export LANG=zh_TW.Big5;echo export LC_ALL=zh_TW.Big5"
     alias u="echo export LANG=zh_TW.UTF-8;echo export LC_ALL=zh_TW.UTF-8"
     alias g++='g++ -Wno-deprecated'
