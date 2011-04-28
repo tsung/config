@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/jon/doc'
+let g:netrw_dirhist_2='/home/jon/dev/labs/webroot/bing/bing-lib/Search'
+let g:netrw_dirhist_3='/home/jon/dev/arbitrage/pear/bing-lib/Search'
+let g:netrw_dirhist_4='/etc/apache2/sites-enabled'
+let g:netrw_dirhist_5='/home/jon/doc'
+let g:netrw_dirhist_6='/media/rtorrent/todo'
+let g:netrw_dirhist_7='/home/jon/dev/heatmap/.git'
+let g:netrw_dirhist_8='/home/jon/tmp'
+let g:netrw_dirhist_9='/home/jon/.vim/autoload/xml'
