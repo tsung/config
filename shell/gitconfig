@@ -1,0 +1,23 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    log = auto
+    ui = auto
+[user]
+    name = Tsung-Hao Lee
+    email = tsunghao@gmail.com
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    st = status --short
+    info = cat-file commit HEAD
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    gl   = log --decorate --graph --pretty=oneline
+[merge]
+    tool = vimdiff
+[core]
+    preloadindex = yes
+    #autocrlf = true
+    #safecrlf = true
