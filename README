@@ -1,1 +1,2 @@
 All software config.
+  shell/* - filename need add prefix ".", ex: bashrc => .bashrc
