@@ -34,6 +34,12 @@ set nobomb
 " 過長不要斷行
 "set nowrap
 
+" 設定營幕能顯示多少就多少, 不要過長顯示 @
+set display=lastline
+
+" 設定最大寬度, 當一行過長時, 會自動換行 (0 是停用此功能)
+set textwidth=0
+
 " 搜尋到的字加 hilight
 set hlsearch
 set incsearch
