@@ -15,6 +15,7 @@
     info = cat-file commit HEAD
     glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     gl   = log --decorate --graph --pretty=oneline
+    lg   = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\n' --abbrev-commit
 [merge]
     tool = vimdiff
 [core]
