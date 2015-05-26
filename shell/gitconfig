@@ -16,7 +16,14 @@
     glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     gl   = log --decorate --graph --pretty=oneline
     lg   = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\n' --abbrev-commit
+    gitk = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+    glist= log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    d = difftool
 [merge]
+    tool = vimdiff
+[diff]
     tool = vimdiff
 [core]
     preloadindex = yes
@@ -51,3 +58,5 @@
     autocorrect = 1
 [grep]
     fullname = true
+[difftool]
+    prompt = false
