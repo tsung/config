@@ -12,7 +12,9 @@
     ci = commit
     co = checkout
     st = status --short
+    files = "!f() { git diff --name-status $1^ $1; }; f" # git files <SHA> , list modify files
     info = cat-file commit HEAD
+    lo   = log --oneline
     glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     gl   = log --decorate --graph --pretty=oneline
     lg   = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\n' --abbrev-commit
