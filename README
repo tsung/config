@@ -1,2 +1,3 @@
 All software config.
   shell/* - filename need add prefix ".", ex: bashrc => .bashrc
+  gnome：gnome3 config
