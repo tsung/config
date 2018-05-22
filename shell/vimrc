@@ -184,7 +184,7 @@ set dictionary+=~/.vim/funclist.txt
 " NERDTree 關閉按 q 即可
 nnoremap <silent> <F5> :NERDTree<CR>
 nnoremap <silent> <F8> :Tlist<CR>
-nnoremap <silent> <F9> :set paste<CR>
+nnoremap <silent> <F9> :set paste<CR> :set nolist=<CR>
 "nnoremap <silent> <F6> :tabn<CR>
 "nnoremap <C-n> <Esc>:tabnew<CR><Esc>:e
 map <F2> :set spell!<CR><Bar>:echo "Spell check: " . strpart("OffOn", 3 * &spell, 3)<CR>
