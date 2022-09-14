@@ -4,7 +4,8 @@
 "set guifont=mingliu:h12
 
 " 字典自動翻譯
-set keywordprg=~/bin/ydict
+" set keywordprg=~/bin/ydict
+set keywordprg=sdcv
 set complete-=k complete+=k
 
 " 設定 vim 編輯預設備份目錄, 必須先 mkdir ~/vi_backup/
