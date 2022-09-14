@@ -1,10 +1,16 @@
 #!/bin/sh
-cp -v linux/bashrc ~/.bashrc
-cp -v linux/profile ~/.profile
-cp -v gitconfig ~/.gitconfig
-cp -v gitignore ~/.gitignore
-cp -v screenrc ~/.screenrc
-cp -v tmux.conf ~/.tmux.conf
-cp -v vim ~/.vim
-cp -v vimrc ~/.vimrc
-mkdir ~/vi_backup # for .vimrc backupdir=~/vi_backup/
+dirname=$(dirname "$0")
+cd $dirname
+cp -iv linux/bashrc ~/.bashrc
+cp -iv linux/profile ~/.profile
+cp -iv gitconfig ~/.gitconfig
+cp -iv gitignore ~/.gitignore
+cp -iv screenrc ~/.screenrc
+cp -iv tmux.conf ~/.tmux.conf
+cp -iv vimrc ~/.vimrc
+if [ ! -d "~/.vim" ]; then
+    cp -r -iv vim ~/.vim
+fi
+if [ ! -d "~/vi_backup" ]; then
+    mkdir ~/vi_backup # for .vimrc backupdir=~/vi_backup/
+fi
