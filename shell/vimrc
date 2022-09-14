@@ -1,8 +1,3 @@
-"gvim setting
-"colorscheme desert
-"colorscheme ir_black
-"set guifont=mingliu:h12
-
 " 字典自動翻譯
 " set keywordprg=~/bin/ydict
 set keywordprg=sdcv
@@ -83,16 +78,20 @@ filetype plugin indent on " Enable filetype-specific indenting and plugins
 set list
 set listchars=tab:->,trail:.
 
-" {{{ syntax highlight
+" {{{ ColorScheme and syntax highlight
 syntax on
 ":highlight 可以看到所有的顏色
 " 顏色 Templates
-" /usr/share/vim/vim70/colors/desert.vim
+"
+"colorscheme list
+" ls /usr/share/vim/vim*/colors/
+"
 "colorscheme default
 "colorscheme desert
 colorscheme darkblue
 "hi Comment ctermbg=black ctermfg=darkcyan
-hi Comment term=standout cterm=bold ctermfg=0
+"hi Comment term=standout cterm=bold ctermfg=0
+hi Comment term=standout cterm=bold ctermfg=darkgrey
 hi Search term=reverse ctermbg=3 ctermfg=0
 hi Folded ctermbg=black ctermfg=darkcyan
 hi Cursor ctermbg=Gray ctermfg=Blue
@@ -101,6 +100,11 @@ hi clear SpellBad
 hi SpellBad term=underline cterm=underline ctermfg=red
 "highlight Normal ctermbg=black ctermfg=white
 "set background=light
+
+"gvim setting
+"colorscheme desert
+"colorscheme ir_black
+"set guifont=mingliu:h12
 " }}}
 " {{{ 下面出現一列 bar.
 set laststatus=2
